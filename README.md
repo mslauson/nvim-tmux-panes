@@ -21,14 +21,14 @@ Use your favorite plugin manager to install
       require("nvim-tmux-panes").setup()
     end,
     keys = {
-      {"n", "<leader>\\", ":TmuxPaneVertical<CR>"},
-      {"n", "<leader>-", ":TmuxPaneHorizontal<CR>"}
+      {"n", "<leader>\\", ":TmuxSplitVertical<CR>"},
+      {"n", "<leader>-", ":TmuxSplitHorizontal<CR>"}
     }
   }
 ```
 
 ## Exposed Commands
 
-- `:TmuxPaneVertical` - Open a new vertical pane in the same directory as the current buffer
-- `:TmuxPaneHorizontal` - Open a new horizontal pane in the same directory as the current buffer
+- `:TmuxSplitVertical` - Open a new vertical split in the same directory as the current buffer
+- `:TmuxSplitHorizontal` - Open a new horizontal split in the same directory as the current buffer
 
