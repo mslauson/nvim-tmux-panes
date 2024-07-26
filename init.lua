@@ -1,4 +1,4 @@
-local tmux_panes = require("tmux_panes")
+local tmux_panes = require("tmux-panes")
 
 local function setup_commands()
 	vim.api.nvim_create_user_command("TmuxSplitVertical", tmux_panes.new_vertical, { nargs = 0 })
