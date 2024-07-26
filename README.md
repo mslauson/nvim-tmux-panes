@@ -20,6 +20,10 @@ Use your favorite plugin manager to install
     config = function()
       require("nvim-tmux-panes").setup()
     end,
+    cmd = {
+      "TmuxSplitVertical",
+      "TmuxSplitHorizontal",
+    },
     keys = {
       {"n", "<leader>\\", ":TmuxSplitVertical<CR>"},
       {"n", "<leader>-", ":TmuxSplitHorizontal<CR>"}
